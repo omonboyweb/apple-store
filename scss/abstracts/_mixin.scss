@@ -1,0 +1,81 @@
+@mixin btn-primary {
+    background-color: var(--prime);
+    color: var(--color-white);
+    border-radius: 16px;
+}
+
+@mixin btn-primary-hover {
+    background-color: #5035f7;
+}
+
+@mixin buy-backet {
+    border-radius: 16px;
+    background-color: #f6f6f6;
+    color: var(--1);
+}
+
+@mixin buy-backet-hover {
+    background-color: #52d116;
+}
+
+@mixin phone-num {
+    color: var(--1);
+}
+
+@mixin phone-num-hover {
+    color: var(--prime);
+}
+
+@mixin details {
+    border-radius: 8px;
+    color: var(--color-white);
+    background-color: var(--prime);
+}
+
+@mixin details-hover {
+    background-color: var(--light-prime);
+}
+
+@mixin details-disable {
+    background-color: var(--01);
+    color: var(--07);
+}
+
+@mixin details-ghost {
+    border: 1px solid var(--prime);
+    color: var(--prime);
+}
+
+@mixin buy {
+    border-radius: 8px;
+    background-color: var(--prime);
+    color: var(--color-white);
+}
+
+@mixin buy-hover {
+    background: var(--light-prime);
+}
+
+@mixin buy-gren {
+    border-radius: 8px;
+    background: #52d116;
+}
+
+@mixin buy-blue {
+    border: 1px solid var(--prime);
+    border-radius: 8px;
+    color: var(--prime);
+}
+
+@mixin input-phone {
+    border: 1px solid var(--015);
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--05);
+}
+
+@mixin input-active {
+    border: 1px solid var(--prime);
+    border-radius: 8px;
+    color: var(--1);
+}

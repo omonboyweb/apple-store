@@ -1,0 +1,143 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__top {
+    background-color: var(--light-grey);
+    padding-top: 10px;
+    padding-bottom: 9px;
+    display: none;
+}
+
+.header__top > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__top-link {
+    color: var(--1);
+}
+
+.header__top-option {
+    color: var(--prime);
+    margin-left: 8px;
+    position: relative;
+    cursor: pointer;
+    padding: 3px 20px 3px 3px;
+}
+
+.header__top-option::after {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/icons/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    right: 0;
+    top: calc(50% - 6px);
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top > a {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+}
+
+.top__link-watsapp {
+    padding: 3px;
+    background-color: #2cb742;
+}
+
+.top__link-tg {
+    padding: 7px;
+    background-color: #26a4e4;
+}
+
+@media screen and (min-width: 992px) {
+    .header__top {
+        display: block;
+    }
+}
+
+// header navigation
+.header__middle {
+    display: flex;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.header__logo {
+    width: 40px;
+    margin-right: 36px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.header__middle-list {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.header__middle-sale {
+    border-radius: 8px;
+    background: #fdefbf;
+    position: relative;
+    padding-left: 28px;
+    padding-right: 6px;
+    height: fit-content;
+    display: inline-block;
+}
+
+.header__middle-sale::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/icons/fire-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    left: 4px;
+    top: calc(50% - 10px);
+}
+
+.header__middle-catalog,
+.header__middle-link,
+.header__middle-sale {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--1);
+    cursor: pointer;
+}
+
+.header__middle-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.phone__num {
+    @include phone-num;
+    font-size: 20px;
+}
+
+.phone__num-call {
+    color: var(--prime);
+}
