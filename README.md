@@ -15,15 +15,15 @@ Bu repository Apple mahsulotlarini sotish uchun mo‘ljallangan onlayn market ve
 
 ```bash
 apple-store-design/
-├── assets/
-│ └── images/ # Rasm va ikonkalarning joyi
+├── imgs/
+│ └── icons/
 ├── scss/
-│ ├── base/ # Reset, fonts, variables, mixins
-│ ├── components/ # Butonlar, kartalar, navbar, footer
-│ ├── layouts/ # Asosiy sahifa layoutlari
-│ └── main.scss # Barcha fayllarni import qiluvchi asosiy fayl
-├── index.html # Bosh sahifa
-└── README.md # GitHub uchun hujjat
+│ ├── base/ 
+│ ├── abstracts/ 
+│ ├── layouts/
+│ └── main.scss 
+├── index.html 
+└── README.md
 ```
 
 ## 🚀 Boshlash (Localda ishlatish)
