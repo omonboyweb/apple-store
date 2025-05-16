@@ -1,3 +1,5 @@
+![Apple](./imgs/promo.png)
+
 # 🍏 Apple Store - Online Market Website (Design Only)
 
 Bu repository Apple mahsulotlarini sotish uchun mo‘ljallangan onlayn market vebsaytining **faqat dizayn** qismini o‘z ichiga oladi. Dizayn toza, minimalist va zamonaviy ko‘rinishda ishlab chiqilgan. SCSS yordamida yozilgan.
@@ -10,7 +12,8 @@ Bu repository Apple mahsulotlarini sotish uchun mo‘ljallangan onlayn market ve
 - ⚙️ Mobilga mos (Responsive) dizayn
 
 ## 📂 Loyihaning tuzilmasi
-``` bash
+
+```bash
 apple-store-design/
 ├── assets/
 │ └── images/ # Rasm va ikonkalarning joyi
@@ -28,8 +31,9 @@ apple-store-design/
 1. Repozitoriyani klon qiling:
    ```bash
    git clone https://github.com/username/apple-store-design.git
+   ```
 
- ## index.html faylni browserda oching va dizaynni ko‘ring.
+## index.html faylni browserda oching va dizaynni ko‘ring.
 
 Eslatma: Bu loyiha faqat front-end dizayni uchun. Hech qanday JavaScript yoki backend ishlanmalar mavjud emas.
 
@@ -40,6 +44,6 @@ SCSS (Sass)
 
 Responsive Web Design (media queries)
 
-
 ## 👨‍💻 Muallif
-Ismingiz –  [@omonboyweb](https://github.com/omonboyweb)
+
+Ismingiz – [@omonboyweb](https://github.com/omonboyweb)
