@@ -441,6 +441,8 @@ input {
   color: var(--color-white);
   position: relative;
   cursor: pointer;
+  text-wrap: nowrap;
+  white-space: nowrap;
 }
 .header__action-basket:hover {
   -webkit-transition: all 0.3s ease;

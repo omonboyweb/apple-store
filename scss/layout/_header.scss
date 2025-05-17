@@ -277,6 +277,8 @@
     color: var(--color-white);
     position: relative;
     cursor: pointer;
+    text-wrap: nowrap;
+    white-space: nowrap;
 
     &:hover {
         @include transform;
