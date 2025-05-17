@@ -1,0 +1,119 @@
+.hero {
+    background-color: #d0eafc;
+}
+
+.hero__block {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    position: relative;
+}
+
+.hero__slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.hero__block::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/icons/hero-arrow.svg);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.hero__block::after {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/icons/hero-right-arrow.svg);
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.slide__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__slide-title {
+    margin-bottom: 9px;
+}
+
+.hero__slide-cost {
+    font-size: 20px;
+    color: #1e3240;
+    align-items: end;
+    margin-bottom: 8px;
+}
+
+.hero__slide-rubl {
+    font-size: 32px;
+    color: #1e3240;
+}
+
+.hero__slide-action {
+    @include btn-primary;
+    border-radius: 8px;
+    padding: 10px 39px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-white);
+    margin-bottom: 16px;
+
+    &:hover {
+        @include btn-primary-hover;
+    }
+}
+
+.slide__img {
+    margin-bottom: -5px;
+}
+
+@media screen and (min-width: 768px) {
+    .hero__block {
+        padding-top: 40px;
+    }
+    .hero__slide-cost {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .hero__slide-rubl {
+        font-size: 48px;
+    }
+
+    .hero__slide-action {
+        padding: 19px 39px 19px 39px;
+        margin-bottom: 31px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero__slide {
+        flex-direction: row;
+        gap: 48px;
+    }
+
+    .slide__content {
+        align-items: start;
+    }
+
+    .hero__block {
+        padding-top: 94px;
+    }
+
+    .hero__slide-action {
+        padding: 19px 39px 19px 39px;
+        margin-bottom: 31px;
+    }
+}
