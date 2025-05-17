@@ -550,7 +550,7 @@ input {
   right: 16px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .nav__search {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -570,7 +570,7 @@ input {
     fill: var(--03);
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .header__bar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -619,7 +619,7 @@ input {
     display: flex;
   }
 }
-@media screen and (min-width: 1188px) {
+@media (min-width: 1188px) {
   .header__bar-contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -739,7 +739,7 @@ input {
   margin-bottom: -5px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .hero__block {
     padding-top: 40px;
   }
@@ -755,7 +755,7 @@ input {
     margin-bottom: 31px;
   }
 }
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .hero__slide {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

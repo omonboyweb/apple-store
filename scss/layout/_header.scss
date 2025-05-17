@@ -370,7 +370,7 @@
     right: 16px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .nav__search {
         display: flex;
     }
@@ -386,7 +386,7 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
     .header__bar {
         display: flex;
     }
@@ -436,7 +436,7 @@
     }
 }
 
-@media screen and (min-width: 1188px) {
+@media (min-width: 1188px) {
     .header__bar-contact {
         display: flex;
     }

@@ -79,7 +79,7 @@
     margin-bottom: -5px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .hero__block {
         padding-top: 40px;
     }
@@ -98,7 +98,7 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
     .hero__slide {
         flex-direction: row;
         gap: 48px;
