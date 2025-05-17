@@ -80,9 +80,14 @@ input {
 
 .container {
   width: 100%;
-  max-width: 1230px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+h1 {
+  position: absolute;
+  left: -9999px;
 }
 
 .header {
@@ -801,4 +806,217 @@ input {
     padding: 19px 39px 19px 39px;
     margin-bottom: 31px;
   }
+}
+.product__block {
+  padding-top: 15px;
+}
+
+.product__title {
+  font-weight: 500;
+  font-size: clamp(24px, 5vw, 48px);
+  color: var(--1);
+  text-align: center;
+}
+
+.product__lists {
+  padding-top: 30px;
+}
+
+.product__lists-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--prime);
+}
+
+.products__items {
+  padding: 24px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  row-gap: 24px;
+}
+
+.products__card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+  background: var(--color-white);
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 16px 16px 24px 16px;
+}
+
+.card__top,
+.card__status,
+.card__bootom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__top {
+  margin-bottom: 16px;
+}
+
+.card__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card__stars > span:last-child {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--prime);
+  margin-left: 8px;
+}
+
+.card__like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.card__like > button {
+  cursor: pointer;
+}
+.card__like > button:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.card__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 9px;
+  margin-bottom: 16px;
+}
+
+.card__name {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  color: var(--1);
+}
+
+.card__status {
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: var(--06);
+}
+
+.status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.status-color {
+  display: inline-block;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #52d116;
+}
+
+.card__cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.old-cost {
+  font-size: 20px;
+  text-decoration: line-through;
+  color: var(--05);
+}
+
+.now-cost {
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--1);
+}
+
+.add-basket {
+  border-radius: 8px;
+  background: #52d116;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 16px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--color-white);
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.add-basket > img {
+  width: 25px;
+  height: 24px;
+}
+
+.card__bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cheeper {
+  text-align: start;
+  font-weight: 500;
+  color: var(--prime);
+  padding: 0;
+  margin: 0;
+}
+
+.one-click {
+  font-weight: 500;
+  text-align: right;
+  color: var(--06);
 }/*# sourceMappingURL=main.css.map */

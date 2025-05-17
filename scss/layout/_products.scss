@@ -1,0 +1,166 @@
+.product__block {
+    padding-top: 15px;
+}
+.product__title {
+    font-weight: 500;
+    font-size: clamp(24px, 5vw, 48px);
+    color: var(--1);
+    text-align: center;
+}
+
+.product__lists {
+    padding-top: 30px;
+}
+
+.product__lists-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--prime);
+}
+
+.products__items {
+    padding: 24px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    column-gap: 24px;
+    row-gap: 24px;
+}
+
+.products__card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    background: var(--color-white);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 24px 16px;
+}
+
+.card__top,
+.card__status,
+.card__bootom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__top {
+    margin-bottom: 16px;
+}
+
+.card__stars {
+    display: flex;
+    align-items: center;
+
+    & > span:last-child {
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--prime);
+        margin-left: 8px;
+    }
+}
+
+.card__like {
+    display: flex;
+    gap: 8px;
+    transition: all 0.3s ease;
+
+    & > button {
+        cursor: pointer;
+    }
+
+    & > button:hover {
+        transform: scale(1.01);
+    }
+}
+
+.card__data {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 9px;
+    margin-bottom: 16px;
+}
+
+.card__name {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: var(--1);
+}
+
+.card__status {
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: var(--06);
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
+
+.status-color {
+    display: inline-block;
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #52d116;
+}
+
+.card__cost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.old-cost {
+    font-size: 20px;
+    text-decoration: line-through;
+    color: var(--05);
+}
+
+.now-cost {
+    font-weight: 500;
+    font-size: 32px;
+    color: var(--1);
+}
+
+.add-basket {
+    @include buy-gren;
+    flex-grow: 1;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--color-white);
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+    & > img {
+        width: 25px;
+        height: 24px;
+    }
+}
+.card__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cheeper {
+    text-align: start;
+    font-weight: 500;
+    color: var(--prime);
+    padding: 0;
+    margin: 0;
+}
+
+.one-click {
+    font-weight: 500;
+    text-align: right;
+    color: var(--06);
+}
