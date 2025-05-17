@@ -74,6 +74,92 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
     background-color: var(--color-white);
 }
+
+// header bar
+.header__bar {
+    display: none;
+    align-items: center;
+    gap: 24px;
+    align-items: start;
+    padding-bottom: 20px;
+}
+
+.header__bar-list {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+
+.header__bar-link {
+    font-size: 18px;
+    color: var(--1);
+    padding: 3px 3px;
+    white-space: nowrap;
+    &:hover {
+        color: var(--prime);
+    }
+}
+
+.header__bar-list > li {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.header__bar-list > li:not(:nth-child(2))::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--prime);
+    transition: all 0.3s ease;
+}
+
+.header__bar-list > li:hover::after {
+    width: 100%;
+}
+
+.price {
+    border-radius: 10px;
+    background-color: #fdefbf;
+    padding-left: 28px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.price::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/icons/fire-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    left: 5px;
+}
+
+.header__bar-contact {
+    display: none;
+    flex-direction: column;
+    text-align: end;
+    padding-top: 11px;
+}
+
+.bar__phone {
+    font-size: 20px;
+    color: var(--1);
+    margin-bottom: 4px;
+}
+
+.bar__phone-call {
+    font-size: 16px;
+    color: var(--prime);
+}
+
 .header__block {
     display: flex;
     justify-content: space-between;
@@ -220,6 +306,70 @@
     margin-left: 4px;
 }
 
+.product-catalog {
+    display: none;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.product-item svg {
+    stroke: #ccc;
+}
+
+.product-item:hover {
+    color: var(--prime);
+    & > svg {
+        stroke: var(--prime);
+    }
+}
+
+.iphone-btn {
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--color-white);
+    background: linear-gradient(90deg, #000 0%, #5e556b 100%);
+    padding: 20px 59px 20px 66px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    &:hover {
+        @include transform;
+    }
+}
+
+.iphone-btn::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/btn-bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 64px;
+    top: 0;
+    left: 5px;
+}
+
+.iphone-btn::after {
+    position: absolute;
+    content: "";
+    background-image: url(../../imgs/icons/btn-arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    top: calc(50% - 16px);
+    right: 16px;
+}
+
 @media screen and (min-width: 768px) {
     .nav__search {
         display: flex;
@@ -237,6 +387,9 @@
 }
 
 @media screen and (min-width: 992px) {
+    .header__bar {
+        display: flex;
+    }
     .header__logo {
         display: none;
     }
@@ -279,6 +432,15 @@
     }
 
     .header__actions {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1188px) {
+    .header__bar-contact {
+        display: flex;
+    }
+    .product-catalog {
         display: flex;
     }
 }
