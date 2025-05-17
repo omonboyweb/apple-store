@@ -6,6 +6,7 @@
 
 @mixin btn-primary-hover {
     background-color: #5035f7;
+    @include transform;
 }
 
 @mixin buy-backet {
@@ -78,4 +79,9 @@
     border: 1px solid var(--prime);
     border-radius: 8px;
     color: var(--1);
+}
+
+@mixin transform {
+    transition: all 0.3s ease;
+    transform: scale(1.01);
 }
