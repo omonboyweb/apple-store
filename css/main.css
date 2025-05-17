@@ -433,6 +433,26 @@ input {
   height: 40px;
 }
 
+.header__action-filter svg {
+  fill: #706e6e;
+  stroke: #706e6e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__action-filter svg:hover {
+  fill: var(--prime);
+  stroke: var(--prime);
+}
+
+.header__action-heart svg {
+  stroke: #706e6e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__action-heart svg:hover {
+  stroke: var(--prime);
+}
+
 .header__action-basket {
   border-radius: 8px;
   background: #52d116;
@@ -497,6 +517,8 @@ input {
 
 .product-item svg {
   stroke: #ccc;
+  -webkit-filter: saturate(1.2);
+          filter: saturate(1.2);
 }
 
 .product-item:hover {
@@ -635,6 +657,8 @@ input {
 }
 .hero {
   background-color: #d0eafc;
+  -webkit-filter: saturate(1.2);
+          filter: saturate(1.2);
 }
 
 .hero__block {

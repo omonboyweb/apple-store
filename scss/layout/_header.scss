@@ -270,6 +270,24 @@
     }
 }
 
+.header__action-filter svg {
+    fill: #706e6e;
+    stroke: #706e6e;
+    transition: all 0.3s ease;
+    &:hover {
+        fill: var(--prime);
+        stroke: var(--prime);
+    }
+}
+
+.header__action-heart svg {
+    stroke: #706e6e;
+    transition: all 0.3s ease;
+    &:hover {
+        stroke: var(--prime);
+    }
+}
+
 .header__action-basket {
     @include buy-gren;
     padding: 16px 31px 16px 50px;
@@ -322,6 +340,7 @@
 
 .product-item svg {
     stroke: #ccc;
+    filter: saturate(1.2);
 }
 
 .product-item:hover {
