@@ -1,0 +1,155 @@
+.footer__block {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
+
+.footer__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__top {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.foore__top-text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 14px;
+    color: var(--05);
+}
+.footer__top-description {
+    font-size: 11px;
+    text-align: center;
+    color: var(--03);
+}
+
+.footer__menu-list,
+.footer__category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+
+    &li {
+        color: var(--1);
+    }
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 16px;
+}
+
+.footer__contact-phone {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--1);
+}
+
+.footer__contact-center {
+    font-size: 12px;
+    color: var(--06);
+    max-width: 170px;
+}
+
+.footer__contact-call {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--prime);
+}
+
+.footer__contact-icons {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.footer__address {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__address-link {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--1);
+}
+
+.footer__addresss {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .footer__menu-list,
+    .footer__category-list,
+    .footer__contact,
+    .footer__address {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer__contact-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: auto;
+        gap: 8px;
+    }
+}
+
+.footer__top,
+.foore__top-text {
+    justify-content: start;
+    text-align: start;
+    margin-right: auto;
+}
+
+@media (min-width: 992px) {
+    .footer__block {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 40px 0;
+        align-items: start;
+        margin-bottom: 0;
+    }
+    .footer__top {
+        flex-direction: column;
+        text-align: start;
+        & > img {
+            width: 39px;
+            height: 45px;
+        }
+    }
+
+    .footer__top-description {
+        text-align: start;
+    }
+
+    .footer__menu-list,
+    .footer__category-list,
+    .footer__contact,
+    .footer__address {
+        flex-direction: column;
+    }
+
+    .footer__address {
+        display: none;
+    }
+
+    .footer__addresss {
+        display: flex;
+        flex-direction: column;
+    }
+}
